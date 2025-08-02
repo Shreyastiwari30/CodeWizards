@@ -39,7 +39,7 @@ if uploaded_file:
 
 st.markdown("---")
 st.caption("🛰️ Built for the Duality AI Hackathon | Team Code Wizards 🚀")
-=======
+
 import streamlit as st
 from PIL import Image
 from ultralytics import YOLO
@@ -96,7 +96,6 @@ if uploaded_file:
     else:
         st.warning("⚠️ No objects detected. Try another image or lower confidence threshold.")
 
-    # Download button
     with open(result_img_path, "rb") as file:
         st.download_button("⬇️ Download Result Image", file, file_name="detection_result.jpg", mime="image/jpeg")
 
